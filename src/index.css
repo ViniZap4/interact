@@ -1,0 +1,23 @@
+*{
+  transition: 0.5s;
+  font-family: fira code;
+}
+
+@font-face{
+  font-family: fira code;
+  src: url('./font/ttf/FiraCode-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: "fira code","Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

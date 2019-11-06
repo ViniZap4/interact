@@ -1,0 +1,95 @@
+.app{
+  width: 100vw;
+  padding: 2vw;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  animation: initbox 4s;
+}
+
+@keyframes initbox{
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+}
+
+.interact_box{
+  display: flex;
+  width: 60vw;
+  height: 40vw;
+  border-radius: 15px;
+  background: rgba(206, 206, 206, 0.945);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.884);
+  padding: 1vw;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  
+
+} 
+
+
+.img_interact{
+  margin-top: 2vw;
+  width: 40vw;
+  height: auto; 
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.822);
+  border-radius: 7px; 
+}
+
+
+.img_interact:hover{
+  transition: 0.7s;
+  transform: scale(1.05);
+  box-shadow: 6px 6px 23px rgba(0, 0, 0, 0.712);
+  animation: hover_img_interact 2s linear infinite;
+  
+}
+
+@keyframes hover_img_interact{
+  0% { 
+    transform: scale(1);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.822);
+  }
+  50% { 
+    width: 42vw;
+    margin-top: 0.9vw;
+    box-shadow: 6px 6px 23px rgba(0, 0, 0, 0.712);
+  }
+  100% {  
+    transform: scale(1);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.822); 
+  }
+}
+
+.options{
+  margin-top: 5vw;
+  animation: ini_option  3.5s;
+}
+
+@keyframes ini_option{
+  from{
+    margin-top:0vw;
+    opacity: 0;
+  }to{
+    margin-top:5vw;
+    opacity: 1;
+  }
+}
+
+.option{
+  margin: 1vw;
+  background: rgb(109, 109, 109);
+  padding: 1vw;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1.2vw;
+}
+
+.option:hover{
+  background: rgb(65, 65, 65);
+  cursor: pointer;
+  
+}
